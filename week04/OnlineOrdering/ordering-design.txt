@@ -1,0 +1,30 @@
+Product class
+_name: string
+_productID: int
+_price: double
+_quantity: int
+
+
+Customer class
+_name: string
+_address: Address
+
+IsUSA(): boolean
+
+
+Address class
+_street: string
+_city: string
+_state: string
+_country: string
+
+IsUSA(): boolean
+CreateAddress(): string
+
+
+Order class
+_products: list<product>
+
+GetTotal(): double
+GetPackLabel(): string
+GetShipLabel(): string
