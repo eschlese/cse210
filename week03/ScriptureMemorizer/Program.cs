@@ -4,6 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Changed program to get user inputed scripture so that user can use custom scripture everytime.
         Console.WriteLine("Please enter a scripture: ");
         string scriptureStr = Console.ReadLine();
         Console.WriteLine("Please enter the book name: ");
