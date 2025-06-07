@@ -23,16 +23,16 @@ public class Scripture
     public void HideWord()
     {
         Random random = new Random();
-        bool wordFound = false;
+        List<Word> availableWords = new List<Word>();
 
-        while (wordFound == false)
-        {
-            int randomNum = random.Next(_words.Count);
-            if (_words[randomNum].IsHidden() == false)
-            {
-                _words[randomNum].Hide();
-                wordFound = true;
+        foreach (Word word in _words) {
+            if (word.IsHidden() == false){
+                availableWords.Add(word);
             }
+        }
+
+        if (availableWords.Count > 0) {
+            availableWords[random.Next(availableWords.Count)].Hide();
         }
     }
 
