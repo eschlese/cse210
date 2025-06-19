@@ -26,6 +26,8 @@ class BreathingActivity : Activity
             DisplayCountDown(6);
             Console.WriteLine("Breathe out...");
             DisplayCountDown(6);
+
+            current = DateTime.Now;
         }
 
         Console.Clear();

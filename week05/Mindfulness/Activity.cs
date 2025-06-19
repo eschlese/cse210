@@ -57,6 +57,8 @@ class Activity
             {
                 frame = 0;
             }
+
+            current = DateTime.Now;
         }
     }
 

@@ -34,6 +34,8 @@ class ReflectingActivity : Activity
             DisplayQuestion();
             Console.WriteLine();
             DisplaySpinner(6);
+
+            current = DateTime.Now;
         }
 
         Console.Clear();

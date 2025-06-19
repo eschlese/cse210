@@ -55,6 +55,8 @@ class ListingActivity : Activity
             Console.WriteLine();
             response = Console.ReadLine();
             responses.Add(response);
+
+            current = DateTime.Now;
         }
 
         _count = responses.Count;
